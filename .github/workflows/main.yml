@@ -3,6 +3,7 @@ name : Postman Collection Workflow
 on:
  push:
   branches: [main]
+  workflow_dispatch:
   schedule:
    - cron : 30 02 * * * #8 am IST Every day
    - cron : 00 14 * * * #730 pm IST Every day
